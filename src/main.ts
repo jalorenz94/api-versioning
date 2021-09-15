@@ -7,7 +7,6 @@ async function bootstrap() {
   app.enableVersioning()
   const options = new DocumentBuilder()
     .setTitle("Test api")
-    .setVersion(process.env.npm_package_version || "not set")
     .addBearerAuth()
     .build()
 
