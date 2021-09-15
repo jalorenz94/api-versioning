@@ -6,7 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableVersioning()
   const options = new DocumentBuilder()
-    .setTitle("RYTLE API")
+    .setTitle("Test api")
     .setVersion(process.env.npm_package_version || "not set")
     .addBearerAuth()
     .build()
